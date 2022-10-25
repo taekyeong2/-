@@ -11,6 +11,7 @@
        let lotto =[];
        
        for(let i= 0; i<6; i++){
+        // 굳이 i가 실행문 안에서 쓰이지 않아도 i수만큼 for 문을 반복시킴
             let num = Math.floor(Math.random()*45)+1
                 for(let j in lotto){
                     if(num == lotto[j]){
@@ -18,8 +19,8 @@
                     }
                 }
             lotto.push(num);
-       }
-       console.log(lotto);
+   
+       console.log(lot
        document.write(lotto);
     </script>
 </body>
