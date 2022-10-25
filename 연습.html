@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("숫자를 입력하세요"));
+        for(let i=1; i<=num; i++){
+            let temp = String(i);
+            if(temp.endsWith('3') || temp.endsWith('6') || temp.endsWith('9')){
+                temp=temp.substring(0,temp.length-1);
+                temp+="*";
+            }
+            console.log(temp);
+        }
+        
+    </script>
+</body>
+</html>
